@@ -6,8 +6,14 @@
         <!-- IOC控制反转 -->
 <!-- <bean id="student" class="com.fj.qianfeng.Student"></bean> -->
 <!-- DI依赖注入 -->
+	<!-- 添加手机功能 -->
+	<bean id="phone" class="com.fj.qianfeng.Phone">
+	<property name="id" value="3333"></property>
+	<property name="name" value="xiaomi"></property>
+	</bean>
 	<bean id="student" class="com.fj.qianfeng.Student">
 		<property name="name" value="fangjun"/>
 		<property name="age" value="18"/>
+		<property name="phone" ref="phone"/>
 	</bean>
 </beans>
