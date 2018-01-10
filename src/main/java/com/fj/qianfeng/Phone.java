@@ -19,5 +19,10 @@ public class Phone {
 	public String toString() {
 		return "phone [id=" + id + ", name=" + name + "]";
 	}
+	public Phone() {}
+	public Phone(Integer id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 }
