@@ -3,5 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="student" class="com.fj.qianfeng.Student"></bean>
+        <!-- IOC控制反转 -->
+<!-- <bean id="student" class="com.fj.qianfeng.Student"></bean> -->
+<!-- DI依赖注入 -->
+	<bean id="student" class="com.fj.qianfeng.Student">
+		<property name="name" value="fangjun"/>
+		<property name="age" value="18"/>
+	</bean>
 </beans>
