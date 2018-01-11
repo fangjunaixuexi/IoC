@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.fj.qianfeng.Phone;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext-Test.xml")
+@ContextConfiguration({"classpath:applicationContext-Test.xml"})
 public class StudentTest2 {
 	@Autowired
 	private  Phone phone;
