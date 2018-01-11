@@ -1,5 +1,8 @@
 package com.fj.qianfeng;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Phone {
 	private Integer id;
 	private String name;
@@ -19,7 +22,9 @@ public class Phone {
 	public String toString() {
 		return "phone [id=" + id + ", name=" + name + "]";
 	}
-	public Phone() {}
+	public Phone() {
+		System.out.println("进入注解类");
+	}
 	public Phone(Integer id, String name) {
 		this.id = id;
 		this.name = name;
