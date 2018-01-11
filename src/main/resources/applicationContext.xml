@@ -27,4 +27,17 @@
 	<!-- p空间的注入 -->
 	<bean id="phone" class="com.fj.qianfeng.Phone" p:id="123" p:name="xiaomi"/>
 	<bean id="student" class="com.fj.qianfeng.Student" p:name="tom" p:age="18" p:phone-ref="phone"             />
+	<!-- 复杂类型的注入 -->
+	<bean id="myCollection" class="com.fj.qianfeng.MyCollection">
+		<property name="arrs">
+		<list>
+			<value>
+				张三
+			</value>
+			<value>
+				李四
+			</value>
+		</list>
+		</property>
+	</bean>
 </beans>
