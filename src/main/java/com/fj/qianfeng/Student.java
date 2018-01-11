@@ -1,8 +1,16 @@
 package com.fj.qianfeng;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
+	@Value("ÀîÏþ´º")
 	private String name;
+	@Value("23")
 	private Integer age;
+	@Autowired
 	private Phone phone;
 	@Override
 	public String toString() {

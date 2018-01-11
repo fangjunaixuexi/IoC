@@ -1,10 +1,19 @@
 package com.fj.qianfeng;
 
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+
+//设置为多例
+@Scope("prototype")
 public class Phone {
+	//注解注入值
+	@Value("666")
 	private Integer id;
+	@Value("铁三角")
 	private String name;
 	public Integer getId() {
 		return id;
