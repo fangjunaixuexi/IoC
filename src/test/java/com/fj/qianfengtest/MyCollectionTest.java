@@ -12,4 +12,12 @@ public class MyCollectionTest {
 		MyCollection bean = context.getBean("myCollection", MyCollection.class);
 		System.out.println(bean.getArrs().length);
 	}
+	@Test
+	//生命周期方法测试
+	public void test1() {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		MyCollection bean = context.getBean("myCollection", MyCollection.class);
+		System.out.println(bean.getArrs().length);
+		context.close();
+	}
 }
